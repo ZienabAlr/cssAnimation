@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+
+.record{
+    position: relative;
+    padding-top: 0%;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.O-record{
+    visibility: hidden;
+	width: 8.5%;
+    position:relative;
+	margin: -32.8% 49.6%; 
+    /* display: flex; */
+    /* justify-content: center; */
+	animation: knipperend-O 1.5s infinite ;
+	
+}
+
+@keyframes knipperend-O {
+    0%{opacity: 0; visibility: hidden}
+    20%{opacity: 0; visibility: hidden}
+    100%{opacity: 5; visibility: visible;}
+}
+/* @media () */
