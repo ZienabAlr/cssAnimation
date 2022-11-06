@@ -1,0 +1,329 @@
+body {
+	font-family: arial, sans-serif;
+	}
+.center {
+	width:650px;
+	height:400px;
+	position:absolute;
+    z-index: 0;
+	left:50%;
+	top:50%;
+	margin:-200px 0 0 -325px;
+	text-align:center;
+}
+a:hover {
+	text-decoration:underline;
+	}
+nav {
+	float: right;
+	width: 280px;
+	margin-top: 24px;
+	margin-right: 20px;
+	font-size: .8em;
+}
+nav a {
+	color: #222;
+	display: block;
+	float:left;
+	margin: 0px 8px;
+	}
+.apps {
+	text-indent: -9999px;
+	height: 16px;
+	width: 16px;
+	background: url(../images/apps.png);
+	margin-top:5px;
+	}
+.signin {
+	font-weight: bold;
+	color: #FFF;
+	background: #4485f4;
+	padding: 8px 10px;
+	border-style: none;
+	border-radius: 2px;
+	}
+.l {
+	line-height: 25px;	
+	}
+.signin:hover {
+	text-decoration:none;
+	}
+.search {
+	width:80%;
+	height:40px;
+    padding-left: 15px;
+	border-top: 1px solid #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+	border-bottom: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+	background: url(../images/micro.png) no-repeat 95% center;
+	margin-top: 60px;
+	margin-bottom: 15px;
+    font-size: .9em;
+    border-radius: 25px;
+	}
+.button {
+	font-size: .85em;
+	color: #131313;
+	background: #f2f2f2;
+	height: 30px;
+	padding: 6px 12px;
+	margin: 0px 6px;
+    border:none;
+	}
+p {
+	font-size: .8em;
+	color: #222;
+	margin-top: 35px;
+}
+a {
+	text-decoration: none;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+/* Mijn code  */
+/* .doodle { }*/
+
+.afrikaanseVrw {
+	background-image: url(../MyImages/Afrika.svg);
+	background-size: 300px;
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 400px;
+	margin: 0% 28%;
+}
+
+.afrikaanseOgen{
+
+	background-image: url(../MyImages/AfOgen.svg);
+	background-size: 187px;
+	width: 97px;
+	height: 18px;
+	background-repeat: no-repeat;
+	position: relative;
+	top: -230px;
+	left: 284px;
+	animation: afOgen 2s steps(1) forwards; 
+	animation-delay: 1s ;
+	 
+	
+}
+
+.firstAnimation{
+	visibility: visible;
+	animation: endFirstAnimation 4s 1; 
+	animation-fill-mode: forwards;
+}
+
+.secondAnimation{
+	visibility: hidden; 
+	background:  url(../MyImages/zoom-in26.svg) 0 0 no-repeat;
+	width: 280px;
+	height: 400px;
+	margin: 0% 28%;
+	top: 0.5px;
+	background-size: 8000px;
+	animation: 
+	zoomIn1 4s steps(26) 1, 
+	secondAnimation 4s 4s 1 ;
+	animation-delay: 4s;
+	position:absolute ;
+	animation-fill-mode: forwards;
+}
+
+.thirdAnimation{
+
+	visibility: hidden; 
+	background:  url(../MyImages/americanIndian.svg) 0 0 no-repeat;
+	width: 280px;
+	height: 400px;
+	margin: 0% 28%;
+	top: 0.5px;
+	background-size: 8000px;
+	animation: 
+	zoomIn2 4s steps(25) 1, 
+	thirdAnimation 4s 4s 1 ;
+	animation-delay: 8s;
+	position:absolute ;
+	animation-fill-mode: forwards;
+}
+
+.fourthAnimation{
+	visibility: hidden; 
+	background:  url(../MyImages/india.svg) 0 0 no-repeat;
+	width: 280px;
+	height: 400px;
+	margin: 0% 28%;
+	top: 0.5px;
+	background-size: 8000px;
+	animation: 
+	zoomIn3 4s steps(25) 1, 
+	fourthAnimation 4s 4s 1 ;
+	animation-delay: 12s;
+	position:absolute ;
+	animation-fill-mode: forwards;
+}
+
+.fifthAnimation{
+	visibility: hidden; 
+	background:  url(../MyImages/europe2.svg) 0 0 no-repeat;
+	width: 280px;
+	height: 400px;
+	margin: 0% 28%;
+	top: 0.5px;
+	background-size: 8000px;
+	animation: 
+	zoomIn4 4s steps(25) 1, 
+	fifthAnimation 4s 4s 1 ;
+	animation-delay: 16s;
+	position:absolute ;
+	animation-fill-mode: forwards;
+}
+
+.sixthAnimation{
+
+	visibility: hidden; 
+	background:  url(../MyImages/asia.svg) 0 0 no-repeat;
+	width: 280px;
+	height: 400px;
+	margin: 0% 28%;
+	top: 0.5px;
+	background-size: 8000px;
+	animation: 
+	zoomIn5 4s steps(25) 1, 
+	sixthAnimation 4s 4s 1 ;
+	animation-delay: 20s;
+	position:absolute ;
+	animation-fill-mode: forwards;
+}
+
+
+.arab {
+	visibility: hidden;
+	animation: seventhAnimation 7s 4s 1 ;
+	animation-delay: 24s;
+	
+}
+.seventhAnimation{
+
+	background:  url(../MyImages/arab.svg) 0 0 no-repeat;
+	width: 280px;
+	height: 400px;
+	margin: 0% 28%;
+	top: 0.5px;
+	position:absolute ;
+
+}
+
+.arabEye{
+	background-image: url(../MyImages/ogenArab.svg);
+	background-size: 289px;
+	width: 150px;
+	height: 20px;
+	background-repeat: no-repeat;
+	position: relative;
+	top: -290px;
+	left: 252px;
+	animation: arabEye 2s steps(2) 3 forwards; 
+	animation-delay: 24s ;
+	 
+	
+}
+
+.lastAnimation{
+
+	visibility: hidden; 
+	background:  url(../MyImages/background2.svg) 0 0 no-repeat;
+	width: 689px;
+	height: 1200px;
+	margin: 0% 0%;
+	top: -180px;
+	background-size: 650px;
+	animation: 
+	lastAnimation 4s 4s ;
+	animation-delay: 30s;
+	position:absolute ;
+	animation-fill-mode: forwards;
+}
+
+@keyframes afOgen {
+	
+	to {
+		background-position: -98.5px 0px;
+	}
+}
+
+@keyframes endFirstAnimation {
+	100%{visibility:hidden}
+}
+
+@keyframes secondAnimation {
+	0%{ visibility: hidden}
+	100%{ visibility: visible;}
+}
+@keyframes zoomIn1{
+	to {
+	   background-position: -8000px 0;
+   } 
+}
+
+@keyframes thirdAnimation{
+	0%{ visibility: hidden}
+	100%{ visibility: visible;}
+}
+
+@keyframes zoomIn2{
+	to {
+	   background-position: -8050px -50px;
+   } 
+}
+
+@keyframes fourthAnimation{
+	0%{ visibility: hidden}
+	100%{ visibility: visible;}
+}
+
+@keyframes zoomIn3{
+	to {
+	   background-position: -8000px -50px;
+   } 
+}
+
+@keyframes fifthAnimation{
+	0%{ visibility: hidden}
+	100%{ visibility: visible;}
+}
+
+@keyframes zoomIn4{
+	to {
+	   background-position: -8000px -50px;
+   } 
+}
+
+@keyframes sixthAnimation{
+	100%{ visibility: visible;}
+}
+
+@keyframes zoomIn5{
+	to {
+	    background-position: -8010px -50px;
+    } 
+}
+
+@keyframes seventhAnimation{
+	0%{ visibility: hidden}
+	95%{ visibility: visible;}
+	100%{ opacity: 0; visibility: hidden;}
+}
+@keyframes arabEye {
+	
+	to {
+		background-position: -298px 0px;
+	}
+}
+
+@keyframes lastAnimation{
+	0%{ opacity: 0 ;visibility: hidden}
+	100%{ opacity: 1 ;visibility: visible;}
+}
+
