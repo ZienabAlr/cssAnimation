@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+.content{
+
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    
+}
+
+.content h1{
+
+    font-size: 90px;
+    color: #EB5827;
+}
+
+.content h2{
+
+    font-size: 40px;
+    color: #440DCC;
+}
+.content h3{
+
+    font-size: 20px;
+    color: rgb(36, 36, 36);
+}
+
+.btn{
+
+    display: flex;
+    justify-content: center;
+   
+}
+.button {
+    border: 2px solid #440DCC;
+    border-radius: 5px;
+    padding: 15px 35px;
+    color: #440DCC;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    transition: .2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+
+}
+.button::after{
+
+    background-color: #440DCC; 
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.button:hover::after{
+    transform: translate(0, 0);
+    
+ } 
+ 
+.button:hover{
+    border: 2px solid transparent;
+    background-color: #440DCC;
+    color: white;
+    transform: scale(1.05);
+    will-change: transform;
+    
+}
+.loopingback{
+
+    background-image: url(images/background2.png);
+    background-size: 3000px;
+    background-repeat: no-repeat;
+    height: 1000px;
+    animation-name: backgrnd;
+    animation-duration: 4.7s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}  
+.walking{
+
+    background-image: url(images/walkingduck.svg);
+    background-repeat: no-repeat;
+    background-size: 9000px;
+    z-index: 0;
+    width:385px;
+	height:310px;
+    position: relative;
+    margin: 220px 40% 0 40%;
+   animation: walking 5s 1 steps(22) forwards;
+
+}
+
+.walking img{
+    display: flex;
+    position: absolute;
+    float: right;
+    margin: 120.7px 0 0 96.5% ;
+}
+
+@keyframes walking {
+    
+    to {
+       
+         background-position: -8625px 0px;
+    } 
+  
+}
+@keyframes backgrnd {
+    from{
+
+        background-position: -1400px 0px;
+    }
+    to {
+       
+         background-position: 0px 0px;
+    } 
+}
+
+/* Style login pagina  */
+@import url(//db.onlinewebfonts.com/c/1f18a828748b3090f287def14b600d51?family=Kohinoor);
+
+nav{
+    background-color: white;
+}
+.logo img{
+    width: 200px;
+    padding: 1em ;
+}
+
+.loginSign{
+    display: inline;
+    float: right;
+    margin: 2em 3em;
+}
+
+.loginSign a{
+    text-decoration: none;
+    padding:15px 30px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.loginSign .notActiv{
+    border: #2eaa4d solid 2px;
+}
+
+.loginSign .activeBtn{
+    background-color: #440DCC;
+    color: white;
+}
+
+.body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: rgb(68,23,204);
+background: linear-gradient(0deg, rgba(68,23,204,0.8048780487804879) 0%, rgba(105,37,163,0.8807588075880759) 30%, rgba(68,13,204,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+#signupForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.form {
+    background-color: white;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}
+  
+.title {
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-family: "Kohinoor";
+    text-align: center;
+    color: #440DCC;
+}
+  
+#inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+   
+}
+  
+.borderBottom{
+
+    border-bottom: 1px solid #dadce0;
+}
+  
+.warning p {
+    color: red;
+}
+  
+  
+#inputContainer .login{
+    text-align: right;
+    font-size: 13px;
+}
+  
+#inputContainer .input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border:0px;
+    font-size: 16px;
+    padding: 0 20px;
+    background-color:transparent ;
+    z-index: 1;
+}
+
+#inputContainer .input:focus{
+
+  outline: none;
+}
+  
+.font{
+    font-family: 'Open Sans', sans-serif;
+}
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    color: #dadce0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+  
+  ::placeholder {
+    color: transparent;
+  }
+
+  .buttons{
+
+    padding: 0 75px 30px 75px;
+  }
+  
+  #submitBtn {
+    display: block;
+    margin-left: auto;
+    padding:15px 35px;
+    border: none;
+    display: inline;
+    margin: 0 5px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    text-decoration: none;
+  }
+  
+.actBtn{
+    background-color: #2eaa4d;
+    border: 0;
+}
+
+.buttons .borderBack{
+
+    border: 2px solid #440DCC;
+}
+
+
+.input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+  
+.input:not(:placeholder-shown) + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+  
+#noAccount h4{
+    text-align: center;
+}
+  
